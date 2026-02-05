@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      /*
+      let minMax = [2, 3, -5, 7, 10];
+      let min = minMax[0] ;
+
+      for (let i = 1; i < minMax.length; i++) {
+       if (minMax[i] < min) {
+        min = minMax[i];
+       }
+        
+      } 
+      */
+
+      const minMax = [];
+      function minMaxss(arr) {
+        if (arr.length === 0) {
+          return {min: null, max: null};
+        }
+        let mins = arr[0];
+        let maxs = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+          if (arr[i] < mins) mins = arr[i];
+          if (arr[i] > maxs) maxs = arr[i];
+        }
+        return {min, max};
+      }
+      console.log(minMaxss([]));
+
+      for (let i = 1; i <= 20; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+          console.log('fizzbuzz');
+         }
+        else if (i % 3 === 0) {
+          console.log('fizz');
+        }
+        else if (i % 5 === 0) {
+          console.log('buzz');
+        }
+         else {
+          console.log(i);
+         }
+        }
+    </script>
+  </body>
+</html>

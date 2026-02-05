@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fixed</title>
+    <style>
+        .sidebar {
+            width: 52px;
+            height: 100vh;
+            position: fixed;
+            top: 10px;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            gap: 2px;
+            background-color: rgb(54, 54, 54);
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;   
+        }
+        .image-1 {
+            margin-top: 10px;
+        }
+        .sidebar-2 {
+            width: 150px;
+            height: 100vh;
+            position: fixed;
+            top: 10px;
+            left: 52px;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            gap: 2px;
+            background-color: rgb(77, 77, 77);
+            padding-top: 10px;
+        }
+        .info { 
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            margin-top: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: arial;
+        }
+
+        
+        .plus {
+            font-size: 10px;
+            margin-left: 45px;
+            color: rgb(216, 216, 216);
+        }
+        .hashtag {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            
+        }
+        .videos, .updates, .faq {
+            color: rgb(216, 216, 216);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+    <div class="image">
+        <img class="image-1"  src="intro-to-html/images.jpg">
+    </div>
+      <div class="img">
+        <img src="intro-to-html/images.jpg">
+    </div>
+      <div class="img">
+        <img src="intro-to-html/images.jpg">
+    </div>
+    </div>
+    <div class="sidebar-2">
+        <div class="info">INFO
+        <div class="plus">+</div>
+        </div>
+        <div class="hashtag">
+             <div class="videos">
+            &#35; new-videos
+        </div>
+        <div class="updates">
+            &#35; updates
+        </div>
+        <div class="faq">
+            &#35; faq
+        </div>
+        </div>
+            </div>
+         
+      
+
+    </div>
+    </div>
+</body>
+</html>

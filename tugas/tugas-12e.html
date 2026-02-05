@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    tugas
+  </title>
+</head>
+<body>
+  <button onclick="addButton()" class="js-add-cart">Add to cart</button>
+
+  <p class="js-added"></p>
+  <script>
+
+    let timeOutId;
+    function addButton() {
+      document.querySelector('.js-added').textContent = 'added'
+
+    clearTimeout(timeOutId);
+
+    timeOutId = setTimeout (function addButton() {
+      document.querySelector('.js-added').textContent = ''
+    }, 2000);
+  }
+    
+  </script>
+</body>
+</html>

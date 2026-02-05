@@ -1,0 +1,17 @@
+.judul {
+                font-size: 30px;
+                font-weight: bold;
+                text-align:center;
+                font-family: monsterrat;
+
+            }
+            .paragraf {
+                font-size: 23px;
+                text-align: center;
+                font-family: monsterrat;
+
+
+            }
+            .delivery {
+                text-decoration: underline;
+            }
